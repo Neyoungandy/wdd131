@@ -1,0 +1,90 @@
+body {
+    font-family: 'Sansita', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a7bd2f;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+    padding: 10px;
+}
+
+nav a {
+    color: #248534;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text decoration: underline;
+    background-color: #ddd;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #dddddd;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #12999e;
+}
+img {
+    max-width: 35%; /* Ensures the image doesn't exceed its container's width */
+    height: auto;    /* Maintains the aspect ratio */
+
+    .about-me {
+        display: flex; /* Use Flexbox for layout */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Space out items */
+        padding: 5px; /* Add some padding */
+    }
+    
+    .about-text {
+        flex: 1; /* Allow the text to take up available space */
+        padding-right: 5px; /* Space between text and image */
+    }
+    
+    .about-image img {
+        max-width: 50px; /* Set a max width for the image */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .about-me {
+        display: flex; /* Use Flexbox for layout */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Space out items */
+        padding: 50px; /* Add some padding */
+        background-color: #3f4952; /* Light blue background color */
+        border: 50px solid #0d471f; /* Optional: add a border */
+        border-radius: 8px; /* Optional: rounded corners */
+        box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    }
+    
+    .about-text {
+        flex: 1; /* Allow the text to take up available space */
+        padding-right: 20px; /* Space between text and image */
+    }
+    
+    .location {
+        margin-top: 20px; /* Space above the location text */
+        font-size: 1.2em; /* Increase font size */
+        color: #4d161657; /* Dark gray color */
+        text-align: center; /* Center the location text */
+    }
