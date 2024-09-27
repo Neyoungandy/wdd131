@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <!-- Mobile-First CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    
+    <!-- Larger Screen CSS -->
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    
+    <!-- Deferred JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Home</h2>
+        <section class="album">
+            <!-- Repeat this figure block for each temple image -->
+            <figure>
+                <img src="images/aba_nigeria_temple.webp" alt="Temple 1">
+                <figcaption>Aba Nigeria temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/belem_brazil_temple.jpeg" alt="Temple 2">
+                <figcaption>Belem Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bentonville_temple.jpg" alt="Temple 3">
+                <figcaption>Bentonville Arkansas Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/columbus_ohio_temple.jpeg" alt="Temple 4">
+                <figcaption>Columbus Ohio Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/dallas_texas_temple.jpg" alt="Temple 5">
+                <figcaption>Dallas Texas Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Oakland-California-Temple.jpg" alt="Temple 6">
+                <figcaption>Oakland Califonia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/richmond_virginia_temple.jpeg" alt="Temple 7">
+                <figcaption>Richmond Virginia temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/saratoga_spring_utah_temple.jpg" alt="Temple 8">
+                <figcaption>Saratoga Spring Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/st.george_utah_temple.jpg" alt="Temple 9">
+                <figcaption>St.George Utah Temple</figcaption>
+            </figure>
+
+            <!-- Add at least 9 figure elements -->
+            <!-- ... -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="current-year"></span> Temple Album. Last modified: <span id="last-modified"></span>.</p>
+    </footer>
+</body>
+</html>
