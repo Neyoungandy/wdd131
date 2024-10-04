@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Lagos (TBS)</title>
+    <meta name="description" content="Discover the beauty and culture of Lagos,Nigeria. Learn about its history, weather, and attractions.">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to National Theatre Tafabalewa Square, Lagos State</h1>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+            <source srcset="images/hero-meduim.webp" media="(min-width: 601px)">
+            <img src="images/hero-large.webp" alt="" class="hero-image">
+        </picture>
+    </header>
+
+    <main>
+        <section id="weather">
+            <h2>Weather<span class="weather-icon"></span></h2>
+            <p>Temperature: <span id="temperature">30</span>°F</p>
+            <p>Wind Speed: <span id="windSpeed">10</span> mph</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        </section>
+
+        <!-- I can decide to add more sections as needed based on wireframe -->
+        <section id="about">
+            <h2>About National Theatre</h2>
+            <p> The Tafawa Balewa Square, (TBS) is a 14.5-hectare (35.8-acre) ceremonial ground (originally called “Race Course”) in Lagos Island, Lagos.
+
+                The land was provided to colonial authorities by Oba Dosunmu in 1859, who thereafter, built up the surrounding areas. The course was later demolished by the government of Yakubu Gowon to make way for Tafawa Balewa Square. In its hey days, the course hosted the Empire Day parades. The horse racing track was about seven to eight furlongs or a mile.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Andrew. Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

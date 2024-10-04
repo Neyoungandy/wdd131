@@ -1,0 +1,113 @@
+/* CSS Variables for Global Styles */
+:root {
+    --primary-color: #FFDE00; /* Kyoto's traditional color */
+    --secondary-color: #C60C30;
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+    --font-family: 'Arial, sans-serif';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: var(--secondary-color);
+}
+
+.weather-icon::after {
+    content: "⛅";
+    display: inline-block;
+    margin-left: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (min-width: 601px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section {
+        width: 48%;
+    }
+
+    /* Emoticon for wider view */
+    .weather-icon::after {
+        content: "⛅";
+    }
+
+    /* Hide SVG icon in wider view */
+    .weather-svg {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Hide emoticon in mobile view */
+    .weather-icon::after {
+        content: "";
+    }
+
+    /* Show SVG icon in mobile view */
+    .weather-svg {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+    }
+}
+
+/* Accessibility and Color Contrast */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
