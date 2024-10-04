@@ -111,3 +111,39 @@ a {
 a:hover, a:focus {
     text-decoration: underline;
 }
+/* Pseudo-Element Emoticon for Wider Views */
+.weather-icon::after {
+    content: "⛅"; /* Emoticon */
+    display: inline-block;
+    margin-left: 8px;
+}
+
+/* SVG Icon Styling */
+.weather-svg {
+    display: none; /* Hidden by default */
+}
+
+/* Responsive Design for Wider Views (Min-width: 601px) */
+@media (min-width: 601px) {
+    /* Emoticon is already handled by the pseudo-element */
+    /* Hide SVG icon in wider view */
+    .weather-svg {
+        display: none;
+    }
+}
+
+/* Responsive Design for Mobile Views (Max-width: 600px) */
+@media (max-width: 600px) {
+    /* Hide emoticon in mobile view by removing content */
+    .weather-icon::after {
+        content: "";
+    }
+
+    /* Show SVG icon in mobile view */
+    .weather-svg {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+    }
+}
