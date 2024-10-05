@@ -1,8 +1,8 @@
 /* CSS Variables for Global Styles */
 :root {
-    --primary-color: #FFDE00; /* Kyoto's traditional color */
+    --primary-color: #a1b435; /* Kyoto's traditional color */
     --secondary-color: #C60C30;
-    --background-color: #FFFFFF;
+    --background-color: #702263;
     --text-color: #333333;
     --font-family: 'Arial, sans-serif';
 }
