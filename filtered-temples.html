@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <!-- Mobile-First CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    
+    <!-- Larger Screen CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    
+    <!-- Deferred JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Filtered Temple Album</h1>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" data-filter="all">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Temple Gallery</h2>
+        <section class="album">
+            <!-- Figures will be dynamically inserted here -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="current-year"></span> Andrew Mogbeyiromore, Nigeria. Last modified: <span id="last-modified"></span>.</p>
+    </footer>
+</body>
+</html>

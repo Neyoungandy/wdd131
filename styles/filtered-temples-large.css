@@ -1,0 +1,32 @@
+/* filtered-temples-large.css */
+
+/* Navigation for larger screens */
+nav {
+    display: block !important;
+    position: static;
+    background-color: transparent;
+}
+
+.nav-links {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+.hamburger {
+    display: none;
+}
+
+.album {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    position: static;
+    padding: 1rem 0;
+}
