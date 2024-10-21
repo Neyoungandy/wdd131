@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Review Form</title>
+</head>
+<body>
+    <h1>Product Review</h1>
+    <form id="review-form" action="review.html" method="get">
+        <!-- Product Name (populated dynamically) -->
+        <label for="product-name">Product Name (required):</label>
+        <select id="product-name" name="product-name" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            <!-- JS will populate product options here -->
+        </select>
+
+        <!-- Overall Rating (stars or radio buttons) -->
+        <fieldset>
+            <legend>Overall Rating (required):</legend>
+            <input type="radio" id="star1" name="rating" value="1" required>
+            <label for="star1">&star;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&star;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&star;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&star;</label>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&star;</label>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <label for="install-date">Date of Installation (required):</label>
+        <input type="date" id="install-date" name="install-date" required>
+
+        <!-- Useful Features -->
+        <fieldset>
+            <legend>Useful Features:</legend>
+            <input type="checkbox" id="feature1" name="features" value="Feature 1">
+            <label for="feature1">Feature 1</label>
+            <input type="checkbox" id="feature2" name="features" value="Feature 2">
+            <label for="feature2">Feature 2</label>
+            <!-- Add more checkboxes as needed -->
+        </fieldset>
+
+        <!-- Written Review (optional) -->
+        <label for="review-text">Written Review (optional):</label>
+        <textarea id="review-text" name="review-text"></textarea>
+
+        <!-- User Name (optional) -->
+        <label for="user-name">Your Name (optional):</label>
+        <input type="text" id="user-name" name="user-name">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
