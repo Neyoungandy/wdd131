@@ -1,3 +1,4 @@
+/* Base Styles for Desktop View */
 body {
     font-family: Arial, sans-serif;
     background-color: #8b7783;
@@ -30,6 +31,7 @@ input[type="text"], input[type="date"], textarea, select {
     margin: 10px 0;
     border-radius: 4px;
     border: 1px solid #577951;
+    box-sizing: border-box; /* Ensure consistent box-sizing */
 }
 
 input[type="submit"] {
@@ -39,6 +41,7 @@ input[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%; /* Ensure submit button takes full width */
 }
 
 input[type="submit"]:hover {
@@ -54,8 +57,44 @@ input[type="radio"], input[type="checkbox"] {
     margin-right: 5px;
 }
 
+/* Mobile View: Styles for Screens 600px and Below */
 @media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
     form {
         width: 100%;
+        padding: 15px;
+        box-shadow: none; /* Remove shadow for mobile */
+        border-radius: 0; /* Remove border radius for mobile */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font for mobile headers */
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], input[type="date"], textarea, select {
+        padding: 8px;
+        font-size: 14px; /* Smaller input text for mobile */
+        margin: 5px 0; /* Less margin for better spacing */
+    }
+
+    input[type="submit"] {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    label, legend {
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: vertical; /* Allow textarea resizing on mobile */
+    }
+
+    fieldset {
+        margin-bottom: 15px;
     }
 }
