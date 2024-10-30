@@ -1,100 +1,125 @@
-/* Base Styles for Desktop View */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #8b7783;
-    color: #333;
+/* General Reset */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
+/* Body and Font Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Header Styles */
+header {
+    background: #0066cc; /* Blue color */
+    color: white;
+    padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow on hover */
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    background: url('../images/background.jpg') no-repeat center center / cover; /* Background image */
+    color: white;
+    padding: 50px 20px;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: rgb(57, 96, 128);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label, legend {
-    font-weight: bold;
-}
-
-input[type="text"], input[type="date"], textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
-    border: 1px solid #577951;
-    box-sizing: border-box; /* Ensure consistent box-sizing */
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: rgb(125, 87, 87);
+.hero button {
     padding: 10px 20px;
+    background: #ffcc00; /* Yellow button */
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 1.1em;
     cursor: pointer;
-    width: 100%; /* Ensure submit button takes full width */
+    transition: background 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+.hero button:hover {
+    background: #e6b800; /* Darker yellow on hover */
 }
 
-fieldset {
-    border: none;
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    color: #0066cc; /* Blue color for section headings */
     margin-bottom: 10px;
 }
 
-input[type="radio"], input[type="checkbox"] {
-    margin-right: 5px;
+/* Image Styles */
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-/* Mobile View: Styles for Screens 600px and Below */
-@media screen and (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0066cc; /* Blue color */
+    color: white;
+    margin-top: 20px;
+}
 
-    form {
-        width: 100%;
-        padding: 15px;
-        box-shadow: none; /* Remove shadow for mobile */
-        border-radius: 0; /* Remove border radius for mobile */
-    }
-
-    h1 {
-        font-size: 20px; /* Smaller font for mobile headers */
-        margin-bottom: 15px;
-    }
-
-    input[type="text"], input[type="date"], textarea, select {
-        padding: 8px;
-        font-size: 14px; /* Smaller input text for mobile */
-        margin: 5px 0; /* Less margin for better spacing */
-    }
-
-    input[type="submit"] {
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    label, legend {
-        font-size: 14px;
-    }
-
-    textarea {
-        resize: vertical; /* Allow textarea resizing on mobile */
-    }
-
-    fieldset {
-        margin-bottom: 15px;
-    }
+footer p {
+    margin: 5px 0;
 }
