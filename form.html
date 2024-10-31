@@ -1,69 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product Review Form">
-    <link rel="stylesheet" href="styles/style.css">
     <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Andrew Mogbeyiromore">
+    <!-- STYLE SHEETS -->
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Product Review</h1>
-    <form id="review-form" action="review.html" method="get">
-        <!-- Product Name (populated dynamically) -->
-        <label for="product-name">Product Name (required):</label>
-        <select id="product-name" name="product-name" required>
-            <option value="" disabled selected>Select a Product ...</option>
-            <!-- JS will populate product options here -->
+    <header><h1>Product Review</h1></header>
+
+    <form action="review.html" method="get">
+        <!-- Product Name Field -->
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Choose a Product ...</option>
+            <!-- Options will be dynamically populated by JavaScript -->
         </select>
-
-        <!-- Overall Rating (stars or radio buttons) -->
-        <fieldset>
-            <legend>Overall Rating (required):</legend>
-            <input type="radio" id="star1" name="rating" value="1" required>
-            <label for="star1">&star;</label>
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2">&star;</label>
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3">&star;</label>
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4">&star;</label>
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5">&star;</label>
-        </fieldset>
-
+      
+        <!-- Overall Rating (Stars) -->
+        <label>Overall Rating:</label>
+        <div id="rating">
+            <div class="star-rating">
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">☆☆</label>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">☆☆☆</label>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">☆☆☆☆</label>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">☆☆☆☆☆</label>
+            </div>
+        </div>
+        
         <!-- Date of Installation -->
-        <label for="install-date">Date of Installation (required):</label>
-        <input type="date" id="install-date" name="install-date" required>
-
-        <!-- Useful Features -->
-        <fieldset>
-            <legend>Useful Features:</legend>
-            <input type="checkbox" id="feature1" name="features" value="Feature 1">
-            <label for="feature1">Feature 1</label>
-            <input type="checkbox" id="feature2" name="features" value="Feature 2">
-            <label for="feature2">Feature 2</label>
-            <!-- Add more checkboxes as needed -->
-        </fieldset>
-
-        <!-- Written Review (optional) -->
-        <label for="review-text">Written Review (optional):</label>
-        <textarea id="review-text" name="review-text"></textarea>
-
-        <!-- User Name (optional) -->
-        <label for="user-name">Your Name (optional):</label>
-        <input type="text" id="user-name" name="user-name">
-
+        <label for="installationDate">Date of Installation:</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+      
+        <!-- Useful Features (Checkboxes) -->
+        <label>Which features of the product did you find useful?<br>(Check all that apply)</label>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature1" name="features" value="feature1">
+                <label for="feature1">Durability</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature2" name="features" value="feature2">
+                <label for="feature2">Ease of use</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature3" name="features" value="feature3">
+                <label for="feature3">Performance</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature4" name="features" value="feature4">
+                <label for="feature4">Design</label>
+            </div>
+        </div>
+        
+        <!-- Written Review -->
+        <label for="review">Written Review<span class="optional">(Optional)</span></label>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea>
+      
+        <!-- User Name -->
+        <label for="username">Your Name<span class="optional">(Optional)</span></label>
+        <input type="text" id="username" name="username">
+      
         <!-- Submit Button -->
-        <input type="submit" value="Submit Review">
+        <input type="submit" value="Post Review">
     </form>
-    
-    <script src="scripts/script.js"></script>
-</body>
-</html>
-<footer>
-    <p>&copy; <span id="2024"></span> Andrew Mogbeyiromore, Nigeria.</p>
-    <p id="lastModified"></p>
-</footer>
-</body>
-</html>
+
+        <footer>
+            <p>&copy; <span id="2024"></span> Andrew Mogbeyiromore, Nigeria.</p>
+            <p id="lastModified"></p>
+        </footer>
+        </body>
+        </html>
