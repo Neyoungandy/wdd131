@@ -18,14 +18,14 @@ form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #D5CDD5;
+    background-color: #7caa8a;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(162, 86, 86, 0.1);
     flex: 1; /* Allows form to grow and take up available space */
 }
 
 header, footer {
-    background-color: #5b0557;
+    background-color: #765d6b;
     color: #ffffff;
     text-align: center;
     padding: 20px;
@@ -44,7 +44,7 @@ input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #5a839a;
     border-radius: 3px;
 }
 
