@@ -31,6 +31,6 @@ document.querySelector('form').addEventListener('submit', function(e) {
         e.preventDefault();
     } else {
         // Form is valid, redirect to a success page
-        window.location.href = '/thank-you.html'; 
+        window.location.href = '/contactsuccess.html'; 
     }
 });
