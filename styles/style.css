@@ -10,12 +10,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #f4f4f4;
 }
 
 /* Header Styles */
 header {
-    background: #0066cc; /* Blue color */
+    background: #0066cc;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -45,7 +45,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Yellow on hover */
+    color: #ffcc00;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Main Content Styles */
@@ -53,15 +60,15 @@ main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background: white; /* White background for content */
-    border-radius: 8px; /* Rounded corners */
+    background: white;
+    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section Styles */
 .hero {
     text-align: center;
-    background: url('../images/background.jpg') no-repeat center center / cover; /* Background image */
+    background: url('../images/background.jpg') no-repeat center center / cover;
     color: white;
     padding: 50px 20px;
     border-radius: 8px;
@@ -79,7 +86,7 @@ main {
 
 .hero button {
     padding: 10px 20px;
-    background: #ffcc00; /* Yellow button */
+    background: #ffcc00;
     border: none;
     border-radius: 5px;
     font-size: 1.1em;
@@ -88,7 +95,7 @@ main {
 }
 
 .hero button:hover {
-    background: #e6b800; /* Darker yellow on hover */
+    background: #e6b800;
 }
 
 /* Section Styles */
@@ -99,7 +106,7 @@ section {
 }
 
 section h2 {
-    color: #0066cc; /* Blue color for section headings */
+    color: #0066cc;
     margin-bottom: 10px;
 }
 
@@ -115,7 +122,7 @@ section img {
 footer {
     text-align: center;
     padding: 20px;
-    background: #0066cc; /* Blue color */
+    background: #0066cc;
     color: white;
     margin-top: 20px;
 }

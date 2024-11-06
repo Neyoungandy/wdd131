@@ -32,3 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     hamburger.addEventListener('click', toggleMenu);
 });
+function showModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.add('show');
+}
+
+function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.remove('show');
+}
